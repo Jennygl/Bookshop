@@ -1,38 +1,225 @@
 .App {
-  text-align: center;
+    text-align: center;
+    margin: 0;
+}
+body {
+    background-color: #9549495b;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    width: 100vw;
+    /* background: #425a52; */
+}
+/* BOOKRECOMMENDATIONS.js */
+.cardContainer {
+    box-sizing: border-box;
+    margin-top: 10vh;
+    padding: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+@media screen and (max-width: 1000px) {
+    .cardContainer {
+        grid-template-columns: 30% 30%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .cardContainer {
+        grid-template-columns: 50%;
+    }
+}
+.card {
+    display: grid;
+    box-sizing: border-box;
+    /* border-radius: 1rem; */
+    overflow: hidden;
+    cursor: pointer;
+    width: 70%;
+    height: 100%;
+    padding: 5px;
+    border: none;
+}
+.card > * {
+    grid-area: 1/1;
+    transition: 0.4s;
+}
+.card .back {
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1em;
+    /* font-weight:lighter; */
+    color: #000000;
+    /* padding: 5px; */
+    background: var(--c, rgba(255, 255, 255, 0.833));
+    clip-path: inset(0 var(--_i, 100%) 0 0);
+    -webkit-mask: linear-gradient(#000000 0 0), linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+}
+.front {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* padding: 5px; */
+    background-color: rgba(255, 255, 255, 0);
+}
+.back {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover .back {
+    --_i: 0%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-color: rgba(255, 255, 255, 0); */
+    border-radius: 1rem;
+}
+/* .card:hover img {
+    transform: scale(1.2);
+} */
+@supports not (-webkit-mask-clip: text) {
+    .card .back {
+        -webkit-mask: none;
+        color: #fff;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bookImage {
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* --------------------------------------------------------- */
+
+/* HEADERCOMP.js */
+
+.navbar {
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    align-items: center;
+    justify-items: center;
+}
+.bookHeader {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20vh;
+}
+.navbar-toggler {
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+#navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+@media screen and (max-width: 600px) {
+    .navbar-toggler {
+        display: flex;
+        font-size: 2.5em;
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    #navbar-nav {
+        display: none;
+    }
+}
+/* #navbarNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+} */
+.navbar-brand {
+    font-size: 2em;
+    padding: 5px 30px 5px 30px;
+    margin: 0;
+    color: black;
+}
+.nav-item {
+    padding-top: 10px;
+    color: black;
+}
+/* a {
+    color: black;
+} */
+.nav-link {
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* HEROCOMP */
+.Hero-image {
+    width: 80vw;
+    position: relative;
+    top: 8vh;
+}
+
+/* FOOTER */
+footer {
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.199);
+    padding-top: 5vh;
+    margin-top: 5vh;
+}
+.contact {
+    line-height: 0.7;
+}
+.social {
+    font-size: 2em;
+}
+
+/* MASKEDTEXT */
+.text {
+    font-weight: bolder;
+    line-height: 15vh;
+    background: url('https://lh3.googleusercontent.com/xQrRmPCmd7Nh-s9Triw5Nx1GqyFF-_4-c6WNsZpSjLv4MVLUwnfIHTauNx9o8JPvTe1aEzlApUgSAxC79MYOc_Jl3pg3JfUlDlHuVtPRknKfjIEyb_pCzxNErLpLx_ZdKu-1tEp0Htq4cpJs2Zg6cl06ltqCy1TEk7CXvHcrWJ3Gbo9rBpK4tW4VbmgeMMEAA0Hy8K3KcCzjNXC6UgO3WPmTp3HxbleOfzTZoDAt0y8S4jWgQTcSP2RLD8f2lZMjkUbnbYF5nIzvUn2s2oVvNazdm05szKQeEGEAwF-qYbxAM6C21IuPk879hzNSfppy0QoQmuRl2Se7CO3NG5ZTVG9b4vgRk_mx1VC5HQ7QPt90sZeZzy7rbq24sXhbZEj6Pt2uPJtUiC7sQeZ80MI2F42N4QqqT3H9SIHER-wQPWb1nctrz7vNbFoSMogyf9qpxTu-nkj3AoV81_5kka3RLKkG3qHqaNHb2cjFndc-d9MpNdBXBi69JrEbP6kRcGCAZWLOgXO873-aXhI3gy_8tWzRfYoFCvhSf4qUWR46EQJPI6Zdj_Zw8zTLXQRD-KJ_9W_pCHxNr2_Meb9N3tHHpHqfTAJjSibUjb0LY_2nMvtHWJzEF55HnWckahMOaTRRHwAvFqD0_RFoR388IYjD6rwAq7YWIh4OhIeeLiUy0YY79WZqtazwSwlgVBljQpFGk69eXMwLO8hTrv1j5CaGV_YTigBBZg3q1Tu5AUDKDHywKReQd0Qeydgq-sqWwV2OXZjqnf3J3Rpnz4TxFXkj0jA7FgX_Ox2nBix1GI-KhwAhPMCpJAXrBhJzVYSgcZl53cdM4qjJH_rPA2z_43k2bX7cDJYyf4DVHu2LO1flnLOctTgt7r3qtswiq71v8l65TS1myLkCs2OWWcAV8aL5DLRAnXbOlReKf22wY185oD6d2A=w1174-h880-s-no?authuser=0')
+        center;
+    font-size: 8em;
+    text-align: center;
+    margin: 0;
+    border: 4px solid;
+    background-size: contain;
+    width: 80vw;
+    height: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.subText{
+    font-size: 2em;
+}
+.maskedText {
+    margin-top: 15vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 100vw;
 }
