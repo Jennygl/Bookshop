@@ -1,9 +1,17 @@
+/* justify-content: center;
+justify-items: center;
+justify-self: center;
+align-content: center;
+align-items: center;
+align-self: center;
+text-align: center; */
+
 .App {
     text-align: center;
     margin: 0;
 }
 body {
-    background-color: #9549495b;
+    background-color: white;
     margin: 0;
     min-height: 100vh;
     display: grid;
@@ -13,6 +21,13 @@ body {
     /* background: #425a52; */
 }
 /* BOOKRECOMMENDATIONS.js */
+.bookHeader {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20vh;
+    text-align: center;
+    font-family: 'Almendra Display', cursive;
+}
 .cardContainer {
     box-sizing: border-box;
     margin-top: 10vh;
@@ -62,7 +77,7 @@ body {
     /* padding: 5px; */
     background: var(--c, rgba(255, 255, 255, 0.833));
     clip-path: inset(0 var(--_i, 100%) 0 0);
-    -webkit-mask: linear-gradient(#000000 0 0), linear-gradient(#000 0 0);
+    -webkit-mask: linear-gradient(#ffffff 0 0), linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
     -webkit-mask-clip: text, padding-box;
 }
@@ -111,7 +126,7 @@ img {
 /* --------------------------------------------------------- */
 
 /* HEADERCOMP.js */
-
+/*
 .navbar {
     flex-direction: column;
     position: fixed;
@@ -120,11 +135,7 @@ img {
     align-items: center;
     justify-items: center;
 }
-.bookHeader {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 20vh;
-}
+
 .navbar-toggler {
     display: none;
 }
@@ -150,12 +161,7 @@ img {
         display: none;
     }
 }
-/* #navbarNav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-} */
+
 .navbar-brand {
     font-size: 2em;
     padding: 5px 30px 5px 30px;
@@ -165,7 +171,7 @@ img {
 .nav-item {
     padding-top: 10px;
     color: black;
-}
+} */
 /* a {
     color: black;
 } */
@@ -173,13 +179,12 @@ img {
     color: black;
 }
 
-
 /* HEROCOMP */
-.Hero-image {
+/* .Hero-image {
     width: 80vw;
     position: relative;
     top: 8vh;
-}
+} */
 
 /* FOOTER */
 footer {
@@ -196,10 +201,10 @@ footer {
 }
 
 /* MASKEDTEXT */
-.text {
+/* .text {
     font-weight: bolder;
     line-height: 15vh;
-    background: url('https://lh3.googleusercontent.com/xQrRmPCmd7Nh-s9Triw5Nx1GqyFF-_4-c6WNsZpSjLv4MVLUwnfIHTauNx9o8JPvTe1aEzlApUgSAxC79MYOc_Jl3pg3JfUlDlHuVtPRknKfjIEyb_pCzxNErLpLx_ZdKu-1tEp0Htq4cpJs2Zg6cl06ltqCy1TEk7CXvHcrWJ3Gbo9rBpK4tW4VbmgeMMEAA0Hy8K3KcCzjNXC6UgO3WPmTp3HxbleOfzTZoDAt0y8S4jWgQTcSP2RLD8f2lZMjkUbnbYF5nIzvUn2s2oVvNazdm05szKQeEGEAwF-qYbxAM6C21IuPk879hzNSfppy0QoQmuRl2Se7CO3NG5ZTVG9b4vgRk_mx1VC5HQ7QPt90sZeZzy7rbq24sXhbZEj6Pt2uPJtUiC7sQeZ80MI2F42N4QqqT3H9SIHER-wQPWb1nctrz7vNbFoSMogyf9qpxTu-nkj3AoV81_5kka3RLKkG3qHqaNHb2cjFndc-d9MpNdBXBi69JrEbP6kRcGCAZWLOgXO873-aXhI3gy_8tWzRfYoFCvhSf4qUWR46EQJPI6Zdj_Zw8zTLXQRD-KJ_9W_pCHxNr2_Meb9N3tHHpHqfTAJjSibUjb0LY_2nMvtHWJzEF55HnWckahMOaTRRHwAvFqD0_RFoR388IYjD6rwAq7YWIh4OhIeeLiUy0YY79WZqtazwSwlgVBljQpFGk69eXMwLO8hTrv1j5CaGV_YTigBBZg3q1Tu5AUDKDHywKReQd0Qeydgq-sqWwV2OXZjqnf3J3Rpnz4TxFXkj0jA7FgX_Ox2nBix1GI-KhwAhPMCpJAXrBhJzVYSgcZl53cdM4qjJH_rPA2z_43k2bX7cDJYyf4DVHu2LO1flnLOctTgt7r3qtswiq71v8l65TS1myLkCs2OWWcAV8aL5DLRAnXbOlReKf22wY185oD6d2A=w1174-h880-s-no?authuser=0')
+    background: url('https://lh3.googleusercontent.com/SFGbghHm6R8j9eIGgCt6MEP-7JPTI0GaJVfRBSBkZ3N6zfRevEyjiBdg3QwXPFR0SbhIvCRt4xA2oLLXobrpBarQKX7fCZPznOeAbD6TVAw6Ddj0u2uLPcCAaWVBul-9wd-hXJuNFWZlSPw4y7Gn5KKTccv2-1pQ34u1bkPJaS55Um82CH5QY3HtEBvjeHOz75FQqBclZUUgXV-zMgdo_nhofffun4sDtQjK-zIm59INtITVXjJDYDMH_6OU_Ddiysaqw6ClyPHqwGF5TNB-GQlNoNfTGDjT-Q5Dxu5hsrCwh2NwMFMsrsSpnMXeEf34-47SgWD7mK3PD3mUEXe1gaQExP1zdbS3-IsN6KS-zpW6CKn31G5pU9msiu7p2FeJxhrwSZAyjbBb2WOlMzCTzUyRdZyDp-kb_qa0sQ7zdjs73x63dPLGI29rdJkmalw-8jNTJUGO0v0vbnv_L_Qhkh5U2DL1vv790aBWjoS15rAWrW9D2LDc-XlyfDfz3xyqCuTRuXkx-EyDnSdABcjD0Tc9e6kj-c9E5wSeYlCVv6gAdn2PKdsWE75pn31CoQx3dnEb_1LXnf2ZN5n-_OQPoGo40qtmjTEPgC3Nf-ImenVihkspv_0NmA-X-PlstarYQbZuaD7reVjV2uXU3v8PD3RwTjhInItjbNzq5f04fUmP80oD3UikXsOBtQlzoJKsGOWPs0co8OVgmPg15IioTdArtl0JL2WLt_VZHqrs5kUrxYaZVRLnhTnjb1NXcOyDAk-bRhthoZ5wHGiMCiKOSWVfqY_zDuGMT0yJ_DkZT8ZtCqzwZ-LWpEPykqaVDYb33Mb9G74CQCbNvcMOcNAefUYUHCRms5tjd-4Wo_XvEEYDfIQsu6Ww_YlMhWTPIJ_8xwPw2RvoaifnVIXGKn6i1lK84ZopX6jNGRqpxy4WM97RJQ=w1190-h893-s-no?authuser=0')
         center;
     font-size: 8em;
     text-align: center;
@@ -222,4 +227,4 @@ footer {
     flex-direction: column;
     height: 35vh;
     width: 100vw;
-}
+} */
