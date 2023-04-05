@@ -72,6 +72,7 @@ const Nav = styled.nav`
     top: 0px;
     z-index: 2;
     width: 100vw;
+    /* margin-bottom: 15vh; */
     /* align-items: center; */
     /* justify-items: center; */
     /* text-align:center; */
@@ -96,6 +97,7 @@ const NavbarNav = styled.div`
     justify-content: space-around;
     align-items: center;
     justify-items: center;
+    /* margin-bottom: 15vh; */
 
     @media screen and (max-width: 600px) {
         display: none;

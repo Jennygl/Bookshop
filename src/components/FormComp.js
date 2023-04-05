@@ -79,7 +79,13 @@ const Section = styled.section`
     margin: auto;
     border-radius: 5px;
     border: 2px solid palevioletred;
-`
+    @media screen and (max-width: 600px) {
+        width:90vw;
+    }
+    @media screen and (max-width: 500px) {
+        flex-direction:column;
+    }
+    `
 
 // Formuläret
 const Form = styled.form`
@@ -92,8 +98,11 @@ color: palevioletred;
 margin: 0;
 padding: 0.25em 1em;
 cursor: pointer;
-width: 30vw;
+width: 60%;
 height: 35vh;
+@media screen and (max-width: 500px) {
+    width: 100%;
+    }
 `
 
 // Respektive inputfält, inlkusive label
@@ -129,7 +138,7 @@ const Button = styled.button`
 `
 // Böcker, bild bredvid formulär
 const Img = styled.img`
-    width: 20vw;
+    width: 100%;
     height: 35vh;
     border-radius: 5px;
     /* @media (max-width: 768px) {
