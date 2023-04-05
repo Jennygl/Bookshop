@@ -1,9 +1,11 @@
 // rfce
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { UserInfo } from './UserInfo'
 
 function HeaderComp() {
+    const msg = useContext(UserInfo)
     // Ändrar bakgrundsfärgen för navbaren när man scrollar.
     const [backgroundColor, setBackgroundColor] = useState(
         'rgba(255, 255, 255, 0)'
@@ -36,6 +38,7 @@ function HeaderComp() {
                 style={{ backgroundColor: backgroundColor }}
                 className="navbar"
             >
+                <p>{msg}</p>
                 {/* <div className="nav-container"> */}
                 <Link to="/" className="navbar-brand">
                     <Title>Roslagens Bokhandel</Title>

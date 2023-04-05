@@ -4,6 +4,10 @@ import styled from 'styled-components'
 function FooterComp() {
     return (
         <Footer>
+            <select>
+                <option>Svenska</option>
+                <option>Engelska</option>
+            </select>
             <div className="contact">
                 <p>Roslagens bokhandeln vid Lilla torget i Norrtälje</p>
                 <p>Lilla torget 1</p>

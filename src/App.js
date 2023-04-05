@@ -9,21 +9,24 @@ import Contact from './Pages/Contact'
 import ErrorPage from './components/ErrorPage.tsx'
 import HeaderComp from './components/HeaderComp'
 import FooterComp from './components/FooterComp'
+import { UserInfo } from './components/UserInfo'
 
 function App() {
     return (
         <>
-            <HeaderComp />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/openinghours" element={<Open />} />
-                <Route path="/visit" element={<Visit />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<ErrorPage error={"problem"} />} />
-            </Routes>
-            <Outlet></Outlet>
-            <FooterComp></FooterComp>
+            <UserInfo.Provider value={'Hej'}>
+                <HeaderComp />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/openinghours" element={<Open />} />
+                    <Route path="/visit" element={<Visit />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="*" element={<ErrorPage error={'problem'} />} />
+                </Routes>
+                <Outlet></Outlet>
+                <FooterComp></FooterComp>
+            </UserInfo.Provider>
         </>
     )
 }
