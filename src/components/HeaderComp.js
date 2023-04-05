@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import MultiLingualContent from './multilingualContent'
+import LanguageContent from './LanguageContent'
 
 function HeaderComp() {
     // Ändrar bakgrundsfärgen för navbaren när man scrollar.
@@ -39,7 +39,7 @@ function HeaderComp() {
             >
                 {/* <div className="nav-container"> */}
                 <Link to="/" className="navbar-brand">
-                    <Title>Roslagens Bokhandel</Title>
+                    <Title><LanguageContent contentID="roslagens"/></Title>
                 </Link>
 
                 <Button className="navbar-toggler" onClick="">
@@ -48,16 +48,16 @@ function HeaderComp() {
                 {/* <span class="fa-solid fa-books fa-rotate-270" style="color: #000000;"></span> */}
                 <NavbarNav id="navbar-nav">
                     <Link to="/blog" className="nav-link">
-                        <MultiLingualContent contentID="blog" />
+                        <LanguageContent contentID="blog" />
                     </Link>
                     <Link to="/openinghours" className="nav-link">
-                        <MultiLingualContent contentID="open" />
+                        <LanguageContent contentID="open" />
                     </Link>
                     <Link to="/visit" className="nav-link">
-                        <MultiLingualContent contentID="map" />
+                        <LanguageContent contentID="map" />
                     </Link>
                     <Link to="/contact" className="nav-link">
-                        <MultiLingualContent contentID="contact" />
+                        <LanguageContent contentID="contact" />
                     </Link>
                 </NavbarNav>
             </Nav>

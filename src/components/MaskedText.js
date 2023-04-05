@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import bokhylla from '../assets/bookcase.jpeg'
+import LanguageContent from './LanguageContent'
 
 function MaskedText() {
     return (
         <>
             <Masked>
-                <Text className="text">Roslagens bokhandel</Text>
+                <Text className="text"><LanguageContent contentID="roslagens"/></Text>
                 <Subtext className="subText">
-                    vid Lilla torget i Norrtälje
+                <LanguageContent contentID="square"/>
                 </Subtext>
             </Masked>
         </>

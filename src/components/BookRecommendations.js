@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import MultiLingualContent from './multilingualContent'
+import LanguageContent from './LanguageContent'
 
 function BookRecommendations(props) {
     const [bookData, setBookData] = useState(null)
@@ -16,13 +16,16 @@ function BookRecommendations(props) {
 
     return (
         <>
-            <h3 className="bookHeader"><MultiLingualContent contentID="rec" /></h3>
+            <h3 className="bookHeader">
+                <LanguageContent contentID="rec" />
+            </h3>
             <div className="cardContainer">
                 {bookData &&
                     bookData.items.map((book) => (
                         <div className="card" key={book.id}>
-                            <div className="front"
-                            // key={book.id}
+                            <div
+                                className="front"
+                                // key={book.id}
                             >
                                 <img
                                     src={book.volumeInfo.imageLinks.thumbnail}
@@ -31,8 +34,9 @@ function BookRecommendations(props) {
                                 ></img>
                             </div>
 
-                            <div className="back"
-                            // key={book.id}
+                            <div
+                                className="back"
+                                // key={book.id}
                             >
                                 <p id="bookTitle">{book.volumeInfo.title}</p>
                                 <p>by {book.volumeInfo.authors.join(', ')}</p>
