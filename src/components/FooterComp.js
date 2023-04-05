@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { LanguageButton } from './LanguageButton'
 
 function FooterComp() {
     return (
         <Footer>
-            <select>
-                <option>Svenska</option>
-                <option>Engelska</option>
-            </select>
+            <LanguageButton />
+          
             <div className="contact">
                 <p>Roslagens bokhandeln vid Lilla torget i Norrtälje</p>
                 <p>Lilla torget 1</p>

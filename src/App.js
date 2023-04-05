@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Routes, Route, Outlet } from 'react-router-dom'
 import './App.css'
 import Home from './Pages/Home'
@@ -9,12 +9,18 @@ import Contact from './Pages/Contact'
 import ErrorPage from './components/ErrorPage.tsx'
 import HeaderComp from './components/HeaderComp'
 import FooterComp from './components/FooterComp'
-import { UserInfo } from './components/UserInfo'
+import { LanguageContext } from './components/multilingualContext'
 
 function App() {
+    const [language, setLanguage] = useState('english')
+    function toggleLanguage() {
+        setLanguage((language) =>
+            language === 'english' ? 'swedish' : 'english'
+        )
+    }
     return (
         <>
-            <UserInfo.Provider value={'Hej'}>
+            <LanguageContext.Provider value={{ language, toggleLanguage }}>
                 <HeaderComp />
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -26,7 +32,7 @@ function App() {
                 </Routes>
                 <Outlet></Outlet>
                 <FooterComp></FooterComp>
-            </UserInfo.Provider>
+            </LanguageContext.Provider>
         </>
     )
 }

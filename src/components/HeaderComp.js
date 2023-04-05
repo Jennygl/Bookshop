@@ -2,10 +2,9 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { UserInfo } from './UserInfo'
+import MultiLingualContent from './multilingualContent'
 
 function HeaderComp() {
-    const msg = useContext(UserInfo)
     // Ändrar bakgrundsfärgen för navbaren när man scrollar.
     const [backgroundColor, setBackgroundColor] = useState(
         'rgba(255, 255, 255, 0)'
@@ -38,7 +37,6 @@ function HeaderComp() {
                 style={{ backgroundColor: backgroundColor }}
                 className="navbar"
             >
-                <p>{msg}</p>
                 {/* <div className="nav-container"> */}
                 <Link to="/" className="navbar-brand">
                     <Title>Roslagens Bokhandel</Title>
@@ -50,16 +48,16 @@ function HeaderComp() {
                 {/* <span class="fa-solid fa-books fa-rotate-270" style="color: #000000;"></span> */}
                 <NavbarNav id="navbar-nav">
                     <Link to="/blog" className="nav-link">
-                        Bloggen
+                        <MultiLingualContent contentID="blog" />
                     </Link>
                     <Link to="/openinghours" className="nav-link">
-                        Öppettider
+                        <MultiLingualContent contentID="open" />
                     </Link>
                     <Link to="/visit" className="nav-link">
-                        Hitta hit
+                        <MultiLingualContent contentID="map" />
                     </Link>
                     <Link to="/contact" className="nav-link">
-                        Kontakt
+                        <MultiLingualContent contentID="contact" />
                     </Link>
                 </NavbarNav>
             </Nav>

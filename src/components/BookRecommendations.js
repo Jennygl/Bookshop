@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import MultiLingualContent from './multilingualContent'
 
 function BookRecommendations(props) {
     const [bookData, setBookData] = useState(null)
@@ -15,7 +16,7 @@ function BookRecommendations(props) {
 
     return (
         <>
-            <h3 className="bookHeader">{props.title}</h3>
+            <h3 className="bookHeader"><MultiLingualContent contentID="rec" /></h3>
             <div className="cardContainer">
                 {bookData &&
                     bookData.items.map((book) => (
