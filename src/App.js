@@ -9,13 +9,13 @@ import Contact from './Pages/Contact'
 import ErrorPage from './components/ErrorPage.tsx'
 import HeaderComp from './components/HeaderComp'
 import FooterComp from './components/FooterComp'
-import { LanguageContext } from './components/multilingualContext'
+import { LanguageContext } from './components/LanguageContext'
 
 function App() {
     const [language, setLanguage] = useState('english')
     function toggleLanguage() {
         setLanguage((language) =>
-            language === 'english' ? 'swedish' : 'english'
+            language === 'english' ? 'svenska' : 'english'
         )
     }
     return (
@@ -26,12 +26,12 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/openinghours" element={<Open />} />
-                    <Route path="/visit" element={<Visit />} />
+                    <Route path="/visit/:info" element={<Visit />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="*" element={<ErrorPage error={'problem'} />} />
                 </Routes>
                 <Outlet></Outlet>
-                <FooterComp></FooterComp>
+                <FooterComp date="230406"></FooterComp>
             </LanguageContext.Provider>
         </>
     )

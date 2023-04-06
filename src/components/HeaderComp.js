@@ -50,8 +50,8 @@ function HeaderComp() {
                     <Link to="/blog" className="nav-link">
                         <LanguageContent contentID="blog" />
                     </Link>
-                    <Link to="/openinghours" className="nav-link">
-                        <LanguageContent contentID="open" />
+                    <Link to="/" className="nav-link">
+                        <LanguageContent contentID="home" />
                     </Link>
                     <Link to="/visit" className="nav-link">
                         <LanguageContent contentID="map" />

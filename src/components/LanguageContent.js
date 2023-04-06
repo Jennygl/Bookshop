@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { LanguageContext } from './multilingualContext'
+import { LanguageContext } from './LanguageContext'
 import { translations } from './translations.js'
 
 export default function LanguageContent({ contentID }) {

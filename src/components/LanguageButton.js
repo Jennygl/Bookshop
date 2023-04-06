@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { LanguageContext } from './multilingualContext'
+import { LanguageContext } from './LanguageContext'
 import styled from 'styled-components'
 
 export const LanguageButton = () => {
@@ -13,5 +13,5 @@ export const LanguageButton = () => {
 }
 
 const Button = styled.button`
-   margin: 10px;
+    margin: 10px;
 `

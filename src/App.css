@@ -24,7 +24,7 @@ body {
 .bookHeader {
     font-size: 2em;
     font-weight: bold;
-    margin-top: 20vh;
+    margin-top: 10vh;
     text-align: center;
     font-family: 'Almendra Display', cursive;
 }
@@ -32,12 +32,13 @@ body {
     box-sizing: border-box;
     margin-top: 10vh;
     padding: 5px;
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 25% 25% 25%;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
 @media screen and (max-width: 1000px) {
     .cardContainer {
