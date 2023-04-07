@@ -39,7 +39,9 @@ function HeaderComp() {
             >
                 {/* <div className="nav-container"> */}
                 <Link to="/" className="navbar-brand">
-                    <Title><LanguageContent contentID="roslagens"/></Title>
+                    <Title>
+                        <LanguageContent contentID="roslagens" />
+                    </Title>
                 </Link>
 
                 <Button className="navbar-toggler" onClick="">
@@ -47,18 +49,19 @@ function HeaderComp() {
                 </Button>
                 {/* <span class="fa-solid fa-books fa-rotate-270" style="color: #000000;"></span> */}
                 <NavbarNav id="navbar-nav">
-                    <Link to="/blog" className="nav-link">
-                        <LanguageContent contentID="blog" />
-                    </Link>
                     <Link to="/" className="nav-link">
                         <LanguageContent contentID="home" />
                     </Link>
-                    <Link to="/visit" className="nav-link">
-                        <LanguageContent contentID="map" />
+                    <Link to="/blog" className="nav-link">
+                        <LanguageContent contentID="blog" />
                     </Link>
-                    <Link to="/contact" className="nav-link">
+
+                    <Link to="/visit/:info" className="nav-link">
+                        <LanguageContent contentID="visit" />
+                    </Link>
+                    {/* <Link to="/visit/:info" className="nav-link">
                         <LanguageContent contentID="contact" />
-                    </Link>
+                    </Link> */}
                 </NavbarNav>
             </Nav>
         </>

@@ -9,6 +9,7 @@ function Home() {
         <div>
              <HeroComp></HeroComp>
             <BookRecommendations title="Rekommenderade nyheter"></BookRecommendations>
+
         </div>
     )
 }

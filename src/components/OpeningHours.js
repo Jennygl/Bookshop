@@ -14,21 +14,26 @@ function FormComp() {
                     alt="Roslagens bokhandel"
                 />
                 <Open>
-                    <h3>
+                    <OpenTitle>
                         <LanguageContent contentID="open" />
-                    </h3>
-                    <p>
-                        <LanguageContent contentID="week" />: <span>10-18</span>
-                    </p>
-                    <p>
-                        <LanguageContent contentID="sat" />: <span>10-15</span>
-                    </p>
-                    <p>
-                        <LanguageContent contentID="sun" />:{' '}
-                        <span>
-                            <LanguageContent contentID="closed" />
-                        </span>
-                    </p>
+                    </OpenTitle>
+
+                    <OpenList>
+                        <li>
+                            <LanguageContent contentID="week" />:{' '}
+                            <span>10-18</span>
+                        </li>
+                        <li>
+                            <LanguageContent contentID="sat" />:{' '}
+                            <span>10-15</span>
+                        </li>
+                        <li>
+                            <LanguageContent contentID="sun" />:{' '}
+                            <span>
+                                <LanguageContent contentID="closed" />
+                            </span>
+                        </li>
+                    </OpenList>
                 </Open>
             </Section>
         </>
@@ -43,7 +48,7 @@ const Section = styled.section`
     flex-direction: row;
     justify-content: space-between;
     width: 50vw;
-    margin: auto;
+    margin: 5vh auto 5vh auto;
     border-radius: 5px;
     border: 2px solid palevioletred;
     @media screen and (max-width: 700px) {
@@ -53,7 +58,9 @@ const Section = styled.section`
         flex-direction: column;
     }
 `
-
+const OpenTitle = styled.h3`
+    display: block;
+`
 const Open = styled.div`
     display: flex;
     flex-direction: column;
@@ -70,6 +77,10 @@ const Open = styled.div`
     /* @media screen and (max-width: 500px) {
         width: 100%;
     } */
+`
+const OpenList = styled.ul`
+    list-style-type: none;
+    padding: 2vh 0 0 0;
 `
 
 // Böcker, bild bredvid formulär

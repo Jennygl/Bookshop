@@ -60,9 +60,11 @@ function FormComp() {
                             <LanguageContent contentID="message" />:
                             {errors.message && <span>{errors.message}</span>}
                         </Label>
-                        <Input
-                            type="text"
+                        <textarea
+                            name={message}
                             value={message}
+                            rows="4"
+                            // cols="50"
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </InputDiv>
@@ -161,7 +163,7 @@ const Img = styled.img`
     /* display:flex; */
     object-fit: cover;
     width: 20vw;
-    height: 40vh;
+    height: 50vh;
     border-radius: 5px;
     @media screen and (max-width: 500px) {
         width: 100%;

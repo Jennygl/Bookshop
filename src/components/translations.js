@@ -6,10 +6,11 @@ export const translations = {
         open: 'Opening Hours',
         map: 'Find us',
         contact: 'Contact',
+        visit: 'Visit us',
         //
         rec: 'Recommended new books',
-        shop: 'Roslagens bookshop at the Small Square in Norrtälje',
-        roslagens: 'Roslagens Bookshop',
+        shop: 'Roslagens bookstore at the Small Square in Norrtälje',
+        roslagens: 'Roslagens Bookstore',
         square: 'at the Small Square in Norrtälje',
         // Manage Language
         language: 'Your language',
@@ -32,6 +33,7 @@ export const translations = {
         open: 'Öppettider',
         map: 'Hitta hit',
         contact: 'Kontakt',
+        visit: 'Besök oss',
         //
         rec: 'Rekommenderade nyheter',
         shop: 'Roslagens bokhandel vid Lilla Torget i Norrtälje',

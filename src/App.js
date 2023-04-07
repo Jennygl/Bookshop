@@ -5,7 +5,7 @@ import Home from './Pages/Home'
 import Blog from './Pages/Blog'
 import Open from './Pages/Open'
 import Visit from './Pages/Visit'
-import Contact from './Pages/Contact'
+import Books from './Pages/Books'
 import ErrorPage from './components/ErrorPage.tsx'
 import HeaderComp from './components/HeaderComp'
 import FooterComp from './components/FooterComp'
@@ -18,6 +18,7 @@ function App() {
             language === 'english' ? 'svenska' : 'english'
         )
     }
+    
     return (
         <>
             <LanguageContext.Provider value={{ language, toggleLanguage }}>
@@ -27,7 +28,8 @@ function App() {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/openinghours" element={<Open />} />
                     <Route path="/visit/:info" element={<Visit />} />
-                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/books/:id" element={<Books />} />
+                    {/* <Route path="/contact" element={<Contact />} /> */}
                     <Route path="*" element={<ErrorPage error={'problem'} />} />
                 </Routes>
                 <Outlet></Outlet>
