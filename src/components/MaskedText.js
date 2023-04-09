@@ -7,9 +7,11 @@ function MaskedText() {
     return (
         <>
             <Masked>
-                <Text className="text"><LanguageContent contentID="roslagens"/></Text>
+                <Text className="text">
+                    <LanguageContent contentID="roslagens" />
+                </Text>
                 <Subtext className="subText">
-                <LanguageContent contentID="square"/>
+                    <LanguageContent contentID="square" />
                 </Subtext>
             </Masked>
         </>
@@ -39,6 +41,11 @@ const Text = styled.p`
     @media screen and (max-width: 1200px) {
         font-size: 6em;
     }
+    @media screen and (max-width: 500px) {
+        font-size: 4em;
+        padding: 0;
+        line-height: 1;
+    }
     text-align: center;
     margin: 0;
     border: 4px solid;
@@ -51,4 +58,9 @@ const Text = styled.p`
 `
 const Subtext = styled.p`
     font-size: 2em;
+    @media screen and (max-width: 500px) {
+        font-size: 1em;
+        padding: 0;
+        line-hight: 0;
+    }
 `

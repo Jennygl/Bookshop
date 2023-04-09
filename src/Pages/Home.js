@@ -4,12 +4,14 @@ import HeroComp from '../components/HeroComp'
 // import MaskedText from './MaskedText'
 import BookRecommendations from '../components/BookRecommendations'
 // import FooterComp from '../components/FooterComp'
-function Home() {
+
+function Home(props) {
     return (
         <div>
-             <HeroComp></HeroComp>
-            <BookRecommendations title="Rekommenderade nyheter"></BookRecommendations>
-
+            <HeroComp></HeroComp>
+            <BookRecommendations
+                bookData={props.bookData}
+            ></BookRecommendations>
         </div>
     )
 }

@@ -4,69 +4,41 @@
         "title": "Poesiläsning",
         "date": 230405,
         "post": "1 april. Klockan är slagen. Tiden är kommen. Det är just nu som gäller. Temat för dagens poesi är: det här är inte ett skämt. Eva Kroon. Trummis i bandet Plommons. Musiker. Konstnär. Sprudlande. Med en röst som bär. Tack, för att du är här. Erik Söderblom. Konstnär. Han skriver, tänker. Hans text är hans. Den ska inte kortas. Hur lång är din text, den som ännu är kvar i din dator, Erik? Ta den till ett förlag, tänker jag. Ta strid med dem, låt dina texter få vingar, vill jag säga, tydligt så att han hör. Sven Arne Hökenström. Konstnär. Färg. Han har t ex målat väggen i mellanrummet i bokhandeln. Ni har väl inte missat den? Idag är Höken här. Välkommen ska du vara. Välkommen ni magiska, fantastiska människor. Idag är dagen när er tanketext ska läsas, här på detta vackra torg. Idag ska vi njuta och fundera över er tankemöda. Höra er röst, begrunda era ord. Temat denna 1 april är: det här är inte ett skämt. Välkommen till var och en av er. Välkommen till publiken. Varsågoda. Scenen är er.",
-        "cateroty": "poesi"
+        "category": "poesi"
     },
     {
         "id": 2,
         "title": "Kulturtorget",
         "date": 230406,
         "post": "Vi - t ex Roslagens bokhandel vid Lilla torget i Norrtälje, Mångfald Tillsammans och Café Rekommenderas - vill att torget ska vara en tydlig plats för kulturen. Det ska vara en plats där samtal förs, litteraturen och poesin får ta plats och där vi möter varandra med nyfikenhet. Här finns samtalsmöjligheter, litteratursamtal/föreläsningar (med eller utan böcker), studie- och bokcirklar, fikaplats, stillsam litteraturbegrundan, helst och gärna med samtal som tillför och skapar känslor. Vi vill att Kulturtorget ska vara en plats för ny kunskap och möten som gör skillnad. Folkbildning, helt enkelt. ",
-        "cateroty": "kulturtorget"
+        "category": "kulturtorget"
     },
     {
         "id": 3,
-        "title": "Hejhja",
-        "date": 35,
-        "post": "Vi - t ex Roslagens bokhandel vid Lilla torget i Norrtälje, Mångfald Tillsammans och Café Rekommenderas - vill att torget ska vara en tydlig plats för kulturen. Det ska vara en plats där samtal förs, litteraturen och poesin får ta plats och där vi möter varandra med nyfikenhet. Här finns samtalsmöjligheter, litteratursamtal/föreläsningar (med eller utan böcker), studie- och bokcirklar, fikaplats, stillsam litteraturbegrundan, helst och gärna med samtal som tillför och skapar känslor. Vi vill att Kulturtorget ska vara en plats för ny kunskap och möten som gör skillnad. Folkbildning, helt enkelt. ",
-        "cateroty": "Scotland"
+        "title": "Liza Alexandrova Zorina",
+        "date": 230407,
+        "post": "Liza Alexandrova-Zorina växte upp i staden Kovdor, Ryssland men flyttade senare till Sankt Petersburg och därefter Moskva. Hon är numera bosatt i Sverige. I Sverige har Alexandrova-Zorina skrivit för bland annat Sydsvenskan och Expressen. Hennes reportage i den senare ligger till grund för hennes första bok på svenska, Imperiets barn, som behandlar ett skuggsamhälle, där språket är ryska och svensk lag inte gäller. Alexandrova-Zorina är sedan 2021 gift med den svenske författaren och dramatikern Dmitri Plax. ",
+        "category": "författare"
     },
     {
         "id": 4,
-        "title": "Hohohoho",
-        "date": 35,
-        "post": "Vi - t ex Roslagens bokhandel vid Lilla torget i Norrtälje, Mångfald Tillsammans och Café Rekommenderas - vill att torget ska vara en tydlig plats för kulturen. Det ska vara en plats där samtal förs, litteraturen och poesin får ta plats och där vi möter varandra med nyfikenhet. Här finns samtalsmöjligheter, litteratursamtal/föreläsningar (med eller utan böcker), studie- och bokcirklar, fikaplats, stillsam litteraturbegrundan, helst och gärna med samtal som tillför och skapar känslor. Vi vill att Kulturtorget ska vara en plats för ny kunskap och möten som gör skillnad. Folkbildning, helt enkelt. ",
-        "cateroty": "Scotland"
+        "title": "Lejon och lamm. Duraid Al-Khamisi",
+        "date": 230408,
+        "post": "Baba har tröttnat på att sitta och invänta ålder­domen, så han tar över en kiosk i centrum. Den tidigare ägaren överlåter ett lager av godisnappar, rizzlapapper och snusstockar, och familjen inleder ett nytt liv som kioskägare. Vad ingen vet är att den sömniga förorten snart står mitt i en blodig gängstrid. Samtidigt blåser det upp till storm enligt helt andra vind­ riktningar. Stämmer det som de säger att frukthandlarna är lojala med fundamentalister? Hur kunde kidsen på Voicyklar få så stort våldskapital? Och varför har grannen en Hizbollahflagga i fönstret? Lejon och lamm är en berättelse om en svensk förort, där det eskalerande våldet utmanar invånarnas moraliska kompass. Vad kostar det att välja sida, och vad kostar det att låta bli? En varm, egensinnig och underhållande roman om läget i landet. Duraid Al­-Khamisi, född 1986, är journalist och författare. Han debuterade 2015 med den själv­biografiska Regnet luktar inte här, som följdes upp av kritikerrosade Mellan floderna (2018). Lejon och lamm är hans första roman på Weyler. Om Regnet luktar inte här; https://anettegrinde.blogspot.com/search/label/Duraid%20Al-Khamisi Mer om Lejon och lamm - kan förväntas här inom kort! ",
+        "category": "boktips"
     },
     {
         "id": 5,
-        "title": "Kallehej",
-        "date": 230410,
-        "post": "Vi - t ex Roslagens bokhandel vid Lilla torget i Norrtälje, Mångfald Tillsammans och Café Rekommenderas - vill att torget ska vara en tydlig plats för kulturen. Det ska vara en plats där samtal förs, litteraturen och poesin får ta plats och där vi möter varandra med nyfikenhet. Här finns samtalsmöjligheter, litteratursamtal/föreläsningar (med eller utan böcker), studie- och bokcirklar, fikaplats, stillsam litteraturbegrundan, helst och gärna med samtal som tillför och skapar känslor. Vi vill att Kulturtorget ska vara en plats för ny kunskap och möten som gör skillnad. Folkbildning, helt enkelt. ",
-        "cateroty": "Scotland"
+        "title": "Att samarbeta",
+        "date": 230409,
+        "post": " Att samarbeta är att se andra och ge mer till fler. Det är att ta tillfället i akt att uppmärksammas fler personer, organisationer och företeelser. Berätta att och hur ett samhälle hänger ihop. I bokhandeln arrangeras många sammankomster. Vi möts för poesi, boksamtal, föreläsningar och samtal om olika sakfrågor. Jag samarbetar gärna med andra, sådana som kan och vill. Som ser fördelar med mer kunskap och nya människor. Nyligen pratade vi om insekter. Den ideella föreningen Gröna kvinnor ansvarade för föreläsaren, jag bjöd in, Naturskyddsföreningen bidrog till informationsspridning och vi höll till hos Cafe Rekommenderas. Vi fyllde lokalen med glädje och fick med oss inspiration och lust. ",
+        "category": "samarbete"
     },
     {
         "id": 6,
-        "title": "LKsfdhjc",
+        "title": "Poesilördag",
         "date": 230417,
-        "post": "Vi - t ex Roslagens bokhandel vid Lilla torget i Norrtälje, Mångfald Tillsammans och Café Rekommenderas - vill att torget ska vara en tydlig plats för kulturen. Det ska vara en plats där samtal förs, litteraturen och poesin får ta plats och där vi möter varandra med nyfikenhet. Här finns samtalsmöjligheter, litteratursamtal/föreläsningar (med eller utan böcker), studie- och bokcirklar, fikaplats, stillsam litteraturbegrundan, helst och gärna med samtal som tillför och skapar känslor. Vi vill att Kulturtorget ska vara en plats för ny kunskap och möten som gör skillnad. Folkbildning, helt enkelt. ",
-        "cateroty": "Scotland"
-    },
-    {
-        "id": 7,
-        "title": "dfdggb",
-        "date": "Grinde Lensing",
-        "post": 35,
-        "cateroty": "Scotland"
-    },
-    {
-        "id": 8,
-        "title": "Jenny",
-        "date": "Grinde Lensing",
-        "post": 35,
-        "cateroty": "Scotland"
-    },
-    {
-        "id": 9,
-        "title": "Jenny",
-        "date": "Grinde Lensing",
-        "post": 35,
-        "cateroty": "Scotland"
-    },
-    {
-        "id": 10,
-        "title": "Jenny",
-        "date": "Grinde Lensing",
-        "post": 35,
-        "cateroty": "Scotland"
+        "post": "1 april. Klockan är slagen. Tiden är kommen. Det är just nu som gäller. Temat för dagens poesi är: det här är inte ett skämt. Eva Kroon. Trummis i bandet Plommons. Musiker. Konstnär. Sprudlande. Med en röst som bär. Tack, för att du är här. Erik Söderblom. Konstnär. Han skriver, tänker. Hans text är hans. Den ska inte kortas. Hur lång är din text, den som ännu är kvar i din dator, Erik? Ta den till ett förlag, tänker jag. Ta strid med dem, låt dina texter få vingar, vill jag säga, tydligt så att han hör. Sven Arne Hökenström. Konstnär. Färg. Han har t ex målat väggen i mellanrummet i bokhandeln. Ni har väl inte missat den? Idag är Höken här. Välkommen ska du vara. Välkommen ni magiska, fantastiska människor. Idag är dagen när er tanketext ska läsas, här på detta vackra torg. Idag ska vi njuta och fundera över er tankemöda. Höra er röst, begrunda era ord. Temat denna 1 april är: det här är inte ett skämt. Välkommen till var och en av er. Välkommen till publiken. Varsågoda. Scenen är er. ",
+        "category": "poesilördag"
     }
 ]

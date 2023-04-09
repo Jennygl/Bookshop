@@ -44,20 +44,26 @@ function HeaderComp() {
                     </Title>
                 </Link>
 
-                <Button className="navbar-toggler" onClick="">
+                {/* <Button className="navbar-toggler" onClick="">
                     <ion-icon name="menu-outline"></ion-icon>
-                </Button>
+                </Button> */}
                 {/* <span class="fa-solid fa-books fa-rotate-270" style="color: #000000;"></span> */}
                 <NavbarNav id="navbar-nav">
                     <Link to="/" className="nav-link">
-                        <LanguageContent contentID="home" />
+                        <Navp>
+                            <LanguageContent contentID="home" />
+                        </Navp>
                     </Link>
                     <Link to="/blog" className="nav-link">
-                        <LanguageContent contentID="blog" />
+                        <Navp>
+                            <LanguageContent contentID="blog" />
+                        </Navp>
                     </Link>
 
                     <Link to="/visit/:info" className="nav-link">
-                        <LanguageContent contentID="visit" />
+                        <Navp>
+                            <LanguageContent contentID="visit" />
+                        </Navp>
                     </Link>
                     {/* <Link to="/visit/:info" className="nav-link">
                         <LanguageContent contentID="contact" />
@@ -76,24 +82,28 @@ const Nav = styled.nav`
     top: 0px;
     z-index: 2;
     width: 100vw;
-    /* margin-bottom: 15vh; */
-    /* align-items: center; */
-    /* justify-items: center; */
-    /* text-align:center; */
+    @media screen and (max-width: 600px) {
+        margin-bottom: 10vh;
+    }
 `
 const Title = styled.h2`
     font-family: 'Almendra Display', cursive;
     color: black;
 `
-const Button = styled.button`
-    display: none;
-    @media screen and (max-width: 600px) {
-        display: flex;
-        font-size: 2.5em;
-        text-align: center;
-        justify-content: center;
-    }
+const Navp = styled.p`
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
 `
+// const Button = styled.button`
+//     display: none;
+//     @media screen and (max-width: 600px) {
+//         display: flex;
+//         font-size: 2.5em;
+//         text-align: center;
+//         justify-content: center;
+//     }
+// `
 
 const NavbarNav = styled.div`
     display: flex;
@@ -104,7 +114,7 @@ const NavbarNav = styled.div`
     /* margin-bottom: 15vh; */
 
     @media screen and (max-width: 600px) {
-        display: none;
+        flex-direction: column;
     }
 `
 // const Navlink = styled.link`

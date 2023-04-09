@@ -37,7 +37,7 @@ const Section = styled.section`
     top: 15vh;
     display: flex;
     flex-direction: row;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
     }
 `
@@ -45,6 +45,18 @@ const Section = styled.section`
 const Hero = styled.img`
     width: 40vw;
     height: 70vh;
+    @media screen and (max-width: 900px) {
+        width: 50vw;
+        height: 70vh;
+    }
+    @media screen and (max-width: 600px) {
+        width: 60vw;
+        height: 70vh;
+    }
+    @media screen and (max-width: 480px) {
+        width: 60vw;
+        height: 40vh;
+    }
     padding: 20px;
     display: flex;
     align-self: center;

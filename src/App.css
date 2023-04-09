@@ -9,6 +9,8 @@ text-align: center; */
 .App {
     text-align: center;
     margin: 0;
+    justify-content: center;
+    margin: 0;
 }
 body {
     background-color: white;
@@ -28,8 +30,13 @@ body {
     text-align: center;
     font-family: 'Almendra Display', cursive;
 }
+.cont {
+    align-content: center;
+    align-items: center;
+}
 .cardContainer {
     box-sizing: border-box;
+    margin: auto;
     margin-top: 10vh;
     padding: 5px;
     width: 80%;
@@ -56,7 +63,7 @@ body {
     /* border-radius: 1rem; */
     overflow: hidden;
     cursor: pointer;
-    width: 70%;
+    width: 90%;
     height: 100%;
     padding: 5px;
     border: none;

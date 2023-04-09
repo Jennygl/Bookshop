@@ -5,25 +5,48 @@ import LanguageContent from './LanguageContent'
 
 function FooterComp(props) {
     return (
-        <Footer>
-            <LanguageContent contentID="language" />: <LanguageButton /> -
-            <LanguageContent contentID="changeLang" />
-            <div className="contact">
-                <p>
-                    <LanguageContent contentID="roslagens" />{' '}
-                    <LanguageContent contentID="square" />
-                </p>
-                <p>Lilla torget 1</p>
-                <p>761 30 Norrtälje</p>
+        <>
+            <div className="cardContainer">
+                {props.footerData &&
+                    props.footerData.items.map((book) => (
+                        <div className="card" key={book.id}>
+                            <div className="front">
+                                <img
+                                    src={book.volumeInfo.imageLinks.thumbnail}
+                                    alt={book.volumeInfo.title}
+                                    className="bookImage"
+                                    id={book.id}
+                                ></img>
+                            </div>
+
+                            <div className="back">
+                                <p id="bookTitle">{book.volumeInfo.title}</p>
+                                <p>by {book.volumeInfo.authors.join(', ')}</p>
+                                <p>{book.volumeInfo.categories}</p>
+                            </div>
+                        </div>
+                    ))}
             </div>
-            <div className="social">
-                <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
-            </div>
-            <Copy>
-                &copy; Jenny Grinde Lensing. Senast uppdaterad {props.date}
-            </Copy>
-        </Footer>
+            <Footer>
+                <LanguageContent contentID="language" />: <LanguageButton /> -
+                <LanguageContent contentID="changeLang" />
+                <div className="contact">
+                    <p>
+                        <LanguageContent contentID="roslagens" />{' '}
+                        <LanguageContent contentID="square" />
+                    </p>
+                    <p>Lilla torget 1</p>
+                    <p>761 30 Norrtälje</p>
+                </div>
+                <div className="social">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </div>
+                <Copy>
+                    &copy; Jenny Grinde Lensing. Senast uppdaterad {props.date}
+                </Copy>
+            </Footer>
+        </>
     )
 }
 
