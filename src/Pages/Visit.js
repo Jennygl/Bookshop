@@ -17,5 +17,8 @@ function Visit() {
 export default Visit
 
 const Container = styled.div`
-    margin-top: 15vh;
+    margin-top: 20vh;
+    @media screen and (max-width: 600px) {
+        margin-top: 35vh;
+    }
 `

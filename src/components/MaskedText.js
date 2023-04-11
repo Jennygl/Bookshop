@@ -20,11 +20,9 @@ function MaskedText() {
 
 export default MaskedText
 const Masked = styled.div`
-    /* margin-top: 15vh; */
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* align-content: center; */
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -51,8 +49,6 @@ const Text = styled.p`
     margin: 0;
     border: 4px solid;
     background-size: contain;
-    /* width: 50vw; */
-    /* height: 100%; */
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

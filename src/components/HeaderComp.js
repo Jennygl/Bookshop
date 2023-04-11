@@ -1,5 +1,5 @@
 // rfce
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import LanguageContent from './LanguageContent'
@@ -14,8 +14,8 @@ function HeaderComp() {
         function handleScroll() {
             const scrollY = window.scrollY
             const newBackgroundColor =
-                scrollY > 10
-                    ? 'rgba(255, 255, 255, 1)'
+                scrollY < 40
+                    ? 'rgba(255, 255, 255, 0)'
                     : 'rgba(255, 255, 255, 0.5)'
             setBackgroundColor(newBackgroundColor)
             const anotherBackgroundColor =
@@ -27,9 +27,9 @@ function HeaderComp() {
 
         window.addEventListener('scroll', handleScroll)
 
-        // return () => {
-        //     window.removeEventListener('scroll', handleScroll)
-        // }
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
     }, [])
 
     return (
@@ -38,17 +38,11 @@ function HeaderComp() {
                 style={{ backgroundColor: backgroundColor }}
                 className="navbar"
             >
-                {/* <div className="nav-container"> */}
                 <Link to="/" className="navbar-brand">
                     <Title>
                         <LanguageContent contentID="roslagens" />
                     </Title>
                 </Link>
-
-                {/* <Button className="navbar-toggler" onClick="">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </Button> */}
-                {/* <span class="fa-solid fa-books fa-rotate-270" style="color: #000000;"></span> */}
                 <NavbarNav id="navbar-nav">
                     <Link to="/" className="nav-link">
                         <Navp>
@@ -66,9 +60,6 @@ function HeaderComp() {
                             <LanguageContent contentID="visit" />
                         </Navp>
                     </Link>
-                    {/* <Link to="/visit/:info" className="nav-link">
-                        <LanguageContent contentID="contact" />
-                    </Link> */}
                 </NavbarNav>
             </Nav>
         </>
@@ -96,35 +87,14 @@ const Navp = styled.p`
     font-weight: 500;
     font-size: 1em;
 `
-// const Button = styled.button`
-//     display: none;
-//     @media screen and (max-width: 600px) {
-//         display: flex;
-//         font-size: 2.5em;
-//         text-align: center;
-//         justify-content: center;
-//     }
-// `
-
 const NavbarNav = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     justify-items: center;
-    /* margin-bottom: 15vh; */
 
     @media screen and (max-width: 600px) {
         flex-direction: column;
     }
 `
-// const Navlink = styled.link`
-// font-size: 2em;
-// padding: 5px 30px 5px 30px;
-// margin: 0;
-// color: black;
-// `
-// .nav-item {
-//     padding-top: 10px;
-//     color: black;
-// }

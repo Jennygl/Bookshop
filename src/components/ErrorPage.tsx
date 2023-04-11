@@ -6,7 +6,7 @@ interface ErrorProps {
 
 function ErrorPage(props: ErrorProps) {
     return (
-        <div>
+        <div style={{ height: '30vh', marginTop: '45vh', textAlign: 'center' }}>
             <h2>Houston, we have a {props.error}</h2>
         </div>
     )

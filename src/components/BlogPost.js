@@ -15,6 +15,6 @@ export default BlogPost
 
 const View = styled.div`
     position: relative;
-    top: 30vh;
+    top: 35vh;
     height: 50vh;
 `

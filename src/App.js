@@ -30,28 +30,7 @@ function App() {
                 setBookData(data)
             })
     }, [])
-    // const [data, setData] = useState([])
-    // useEffect(() => {
-    //     fetch('blog.json', {
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //             Accept: 'application/json'
-    //         }
-    //     })
-    //         .then((response) => response.json())
-    //         .then((data) => setData(data))
-    // }, [])
-    const [footerData, setFooterData] = useState(null)
-
-    useEffect(() => {
-        fetch(
-            'https://www.googleapis.com/books/v1/users/100514794045599611922/bookshelves/0/volumes'
-        )
-            .then((response) => response.json())
-            .then((data) => {
-                setFooterData(data)
-            })
-    }, [])
+    
 
     return (
         <>
@@ -72,7 +51,10 @@ function App() {
                     <Route path="*" element={<ErrorPage error={'problem'} />} />
                 </Routes>
                 <Outlet></Outlet>
-                <FooterComp date="230406"></FooterComp>
+                <FooterComp
+                    date="230406"
+                    style={{ position: 'absolute', bottom: '0' }}
+                ></FooterComp>
             </LanguageContext.Provider>
         </>
     )

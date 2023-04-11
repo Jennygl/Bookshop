@@ -64,7 +64,6 @@ function FormComp() {
                             name={message}
                             value={message}
                             rows="4"
-                            // cols="50"
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </InputDiv>
@@ -75,7 +74,6 @@ function FormComp() {
 
                 <Img
                     src={bokhylla}
-                    // className="Hero-image"
                     style={{ resizeMode: 'cover' }}
                     alt="Roslagens bokhandel"
                 />
@@ -87,12 +85,11 @@ export default FormComp
 
 // Formulär och bild
 const Section = styled.section`
-    /* margin-right: 20px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 50vw;
-    margin: auto;
+    margin: 5vh auto 5vh auto;
     border-radius: 5px;
     border: 2px solid palevioletred;
     @media screen and (max-width: 700px) {
@@ -107,8 +104,6 @@ const Section = styled.section`
 
 const Formtitle = styled.h3`
     display: block;
-    /* padding-bottom: 15px; */
-    /* color: black; */
 `
 const Form = styled.form`
     display: flex;
@@ -126,7 +121,6 @@ const InputDiv = styled.div`
     margin-right: 20px;
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
 `
 
 const Label = styled.label`
@@ -148,7 +142,6 @@ const Button = styled.button`
     width: 70%;
     border: none;
     border-radius: 3px;
-    /* margin-bottom: 2vh; */
     margin-top: 10px;
 `
 // Böcker, bild bredvid formulär
