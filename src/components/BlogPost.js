@@ -1,13 +1,20 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import styled from 'styled-components'
 
 function BlogPost() {
     const { id } = useParams()
     return (
-        <div>
+        <View>
             <p>Inlägg {id}</p>
-        </div>
+        </View>
     )
 }
 
 export default BlogPost
+
+const View = styled.div`
+    position: relative;
+    top: 30vh;
+    height: 50vh;
+`

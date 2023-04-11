@@ -7,10 +7,7 @@ import styled from 'styled-components'
 function Visit() {
     return (
         <Container>
-            <Map>
-                <MapComp />
-            </Map>
-
+            <MapComp />
             <FormComp />
             <OpeningHours />
         </Container>
@@ -21,10 +18,4 @@ export default Visit
 
 const Container = styled.div`
     margin-top: 15vh;
-`
-
-const Map = styled.div`
-    /* width: 20vw;
-    height: 35vh; */
-    border-radius: 5px;
 `

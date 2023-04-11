@@ -6,6 +6,7 @@ import LanguageContent from './LanguageContent'
 
 function HeaderComp() {
     // Ändrar bakgrundsfärgen för navbaren när man scrollar.
+    // Transparant från början
     const [backgroundColor, setBackgroundColor] = useState(
         'rgba(255, 255, 255, 0)'
     )
@@ -18,7 +19,7 @@ function HeaderComp() {
                     : 'rgba(255, 255, 255, 0.5)'
             setBackgroundColor(newBackgroundColor)
             const anotherBackgroundColor =
-                scrollY > 600
+                scrollY > 100
                     ? 'rgba(255, 255, 255, 1)'
                     : 'rgba(255, 255, 255, 0.5)'
             setBackgroundColor(anotherBackgroundColor)
@@ -80,7 +81,7 @@ const Nav = styled.nav`
     flex-direction: column;
     position: fixed;
     top: 0px;
-    z-index: 2;
+    z-index: 2000;
     width: 100vw;
     @media screen and (max-width: 600px) {
         margin-bottom: 10vh;

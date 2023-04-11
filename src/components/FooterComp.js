@@ -54,11 +54,23 @@ export default FooterComp
 
 const Footer = styled.footer`
     position: relative;
-    /* bottom: 0px;
-    left: 0px; */
+    bottom: 0px;
+    /* left: 0px;  */
     width: 100vw;
     text-align: center;
+    padding: 10px;
+    @media screen and (max-width: 430px) {
+        font-size: 0.8em;
+
 `
 const Copy = styled.p`
     color: grey;
+    @media screen and (max-width: 430px) {
+        font-size: 0.8em;
+    }
 `
+/* const Add = styled.p`
+    @media screen and (max-width: 430px) {
+        font-size: 0.8em;
+    }
+` */

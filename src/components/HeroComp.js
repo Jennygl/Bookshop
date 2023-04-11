@@ -34,7 +34,13 @@ const Section = styled.section`
     width: 100vw;
     justify-content: center;
     position: relative;
-    top: 15vh;
+    top: 1vh;
+    @media screen and (max-width: 600px) {
+        top: 20vh;
+    }
+    @media screen and (max-width: 500px) {
+        top: 10vh;
+    }
     display: flex;
     flex-direction: row;
     @media screen and (max-width: 1000px) {

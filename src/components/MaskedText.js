@@ -31,6 +31,7 @@ const Masked = styled.div`
     width: 100%;
     z-index: 10;
     box-sizing: border-box;
+    padding-top: 15vh;
 `
 
 const Text = styled.p`

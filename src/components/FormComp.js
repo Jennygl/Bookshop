@@ -114,18 +114,11 @@ const Form = styled.form`
     display: flex;
     flex-direction: column;
     background: transparent;
-    /* text-align: start; */
-    /* justify-content: center; */
-    /* align-content: center; */
     color: black;
     margin: 0;
     padding: 0.25em 1em;
     cursor: pointer;
     width: 100%;
-    /* height: 35vh; */
-    /* @media screen and (max-width: 500px) {
-        width: 100%;
-    } */
 `
 
 // Respektive inputfält, inlkusive label
